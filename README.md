@@ -8,7 +8,7 @@ to check run in the cmd prompt:
 
 git --version
 
-COPY PROJECT TO LOCAL RESPOSITORY
+COPY PROJECT TO LOCAL REPOSITORY
 git clone https://github.com/PUUSTED/testGodotGVC.git
 
 Navigate into the cloned folder.
