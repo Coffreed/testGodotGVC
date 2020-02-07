@@ -17,7 +17,7 @@ Add a file or edit an existing file.
 
 When you add or remove files run command:
 
-git add *.*
+git add (SHIFT + ').(SHIFT + ')
 
 When you wish to save your changes run command: 
 
