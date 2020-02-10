@@ -15,12 +15,13 @@ _global_script_class_icons={
 
 [application]
 
-config/name="testGodotGVC"
+config/name="Nephilim"
 config/icon="res://icon.png"
+
+[autoload]
+
+dir="*res://engine/directions.gd"
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
-vram_compression/import_etc=true
-vram_compression/import_etc2=false
 environment/default_environment="res://default_env.tres"

@@ -1,0 +1,4 @@
+[gd_scene format=2]
+
+[node name="camera" type="Camera2D"]
+anchor_mode = 0

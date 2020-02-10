@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://sprites/npc/creatures/stalfaux.png" type="Texture" id=1]
+[ext_resource path="res://sprites/npc/creatures/stalfauxflipped.png" type="Texture" id=2]
+[ext_resource path="res://npc/creatures/stalfaux.gd" type="Script" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 7.54453, 8.20536 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 8.17258, 8.93808 )
+
+[node name="stalfaux" type="KinematicBody2D"]
+script = ExtResource( 3 )
+TYPE = "ENEMY"
+SPEED = 50.0
+
+[node name="anim" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 0.523373, 0 )
+shape = SubResource( 2 )
+
+[node name="hitbox" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
+position = Vector2( 0.523376, -1.90735e-06 )
+shape = SubResource( 3 )
