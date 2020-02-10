@@ -29,4 +29,4 @@ git pull
 
 To save changes into master repository run command:
 
-gut push
+git push
